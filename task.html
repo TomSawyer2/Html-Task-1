@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>
+        Task
+    </title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .center{
+            text-align: center;
+        }
+        .text{
+            text-align:center;
+        }
+        .zone {
+            
+            font-size:xx-large;
+            min-height: 100px;
+            height: 450px;
+            width: 1000px;
+            margin-left: 100px;
+            border-radius: 10px 10px 10px 10px;
+            border: 3px solid rgb(67, 215, 181);
+        }
+
+        .btn_start{
+            text-align:center;
+            cursor: pointer;
+            width: 100px;
+            height: 44px;
+            line-height: 45px;
+            line-height: 44px\9;
+            margin-top: 20px;
+            padding: 0;
+            background: 0 0;
+            background-color: #4e6ef2;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 17px;
+            color: #fff;
+            box-shadow: none;
+            font-weight: 400;
+            border: none;
+            outline: 0;
+            visibility:visible; ;
+        }
+
+        .btn_next{
+            text-align:center;
+            cursor: pointer;
+            width: 108px;
+            height: 44px;
+            line-height: 45px;
+            line-height: 44px\9;
+            margin-top: 20px;
+            padding: 0;
+            background: 0 0;
+            background-color: #4e6ef2;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 17px;
+            color: #fff;
+            box-shadow: none;
+            font-weight: 400;
+            border: none;
+            outline: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text">
+        A simple example for the task.
+    </h1>
+    
+    <div id="divg" class="zone"></div>
+
+    
+    <button id="btn_start" class="btn_start">start</button>
+    
+
+    <script type="text/javascript">
+        var btn_start = document.getElementById("btn_start");
+        var divg = document.getElementById("divg");
+       
+        function start() {
+            btn_start.onclick = function () {
+                
+                console.log("Game start");
+                btn_start.style.visibility= "hidden";
+                var btn_next = document.createElement("button");
+                console.log("Button created");
+                divg.innerText = "Game start!";
+                btn_next.innerHTML = "Next";
+                btn_next.className = "btn_next";
+                btn_next.style.position = "relative";
+                btn_next.style.top = 380+"px";
+                btn_next.style.left = 350+"px";
+                document.getElementById("divg").append(btn_next);
+                btn_next.onclick = function () {
+                    divg.innerText = "1";
+                    var btn_next2 = document.createElement("button");
+                    console.log("Button2 created");
+                    btn_next2.innerHTML = "Next";
+                    btn_next2.className = "btn_next";
+                    btn_next2.style.position = "relative";
+                    btn_next2.style.top = 380+"px";
+                    btn_next2.style.left = 429.5+"px";
+                    document.getElementById("divg").append(btn_next2);
+                }
+            }
+                
+            //var btn_next = document.createElement("button");
+        }
+        window.onload = start;
+    </script>
+</body>
+
+</html>
