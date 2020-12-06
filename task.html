@@ -2,7 +2,7 @@
 
 <head>
     <title>
-        Task
+        寝 室 逃 脱
     </title>
     <style>
         body{
@@ -29,11 +29,11 @@
         .btn_start{
             text-align:center;
             cursor: pointer;
-            width: 100px;
+            width: 108px;
             height: 44px;
             line-height: 45px;
             line-height: 44px\9;
-            margin-top: 20px;
+            margin-top: 200px;
             padding: 0;
             background: 0 0;
             background-color: #4e6ef2;
@@ -44,7 +44,8 @@
             font-weight: 400;
             border: none;
             outline: 0;
-            visibility:visible;
+            position: relative;
+            visibility: visible;
         }
 
         .btn_next{
@@ -133,33 +134,31 @@
     </style>
 </head>
 
-<body background="preview.jpg">
+<body background="background.jfif" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
     <h1 class="text">
         寝 室 逃 脱
     </h1>
     
     <div id="divg" class="zone"></div>
     
-    <button id="btn_start" class="btn_start">start</button>
+    
     
 
     <script type="text/javascript">
-        var btn_start = document.getElementById("btn_start");
+        
         var divg = document.getElementById("divg");
        
         function start() {
-            btn_start.onclick = function () {
-                
                 console.log("开始");
-                btn_start.style.visibility= "hidden";
+                //btn_start.style.visibility= "hidden";
                 var btn_next = document.createElement("button");
                 console.log("Button created");
-                divg.innerText = "Game start!";
-                btn_next.innerHTML = "Next";
+                divg.innerText = "点击开始以开始游戏";
+                btn_next.innerHTML = "开始";
                 btn_next.className = "btn_next";
                 btn_next.style.position = "relative";
                 btn_next.style.top = 200+"px";
-                btn_next.style.left = 349.5+"px";
+                btn_next.style.left = 294+"px";
                 document.getElementById("divg").append(btn_next);
                 btn_next.onclick = function () {
                     divg.innerText = "今天是考试周后的第一个周末，你准备睡个懒觉";
@@ -169,7 +168,7 @@
                     btn_next2.className = "btn_next";
                     btn_next2.style.position = "relative";
                     btn_next2.style.top = 200+"px";
-                    btn_next2.style.left = 102.5+"px";
+                    btn_next2.style.left = 102+"px";
                     document.getElementById("divg").append(btn_next2);
                         btn_next2.onclick = function () {
                         divg.innerHTML = "丁铃铃铃铃铃铃铃……";
@@ -179,7 +178,7 @@
                         btn_next3.className = "btn_next";
                         btn_next3.style.position = "relative";
                         btn_next3.style.top = 200+"px";
-                        btn_next3.style.left = 284.5+"px";
+                        btn_next3.style.left = 284+"px";
                         document.getElementById("divg").append(btn_next3);
                         btn_next3.onclick = function () {
                             divg.innerHTML = "奇怪，昨天晚上没有定闹钟啊...";
@@ -189,7 +188,7 @@
                             btn_next4.className = "btn_next";
                             btn_next4.style.position = "relative";
                             btn_next4.style.top = 200+"px";
-                            btn_next4.style.left = 218+"px";
+                            btn_next4.style.left = 218.5+"px";
                             document.getElementById("divg").append(btn_next4);
                             btn_next4.onclick = function () {
                                 divg.innerHTML = "看看手机...";
@@ -199,7 +198,7 @@
                                 btn_next5.className = "btn_next";
                                 btn_next5.style.position = "relative";
                                 btn_next5.style.top = 200+"px";
-                                btn_next5.style.left = 362+"px";
+                                btn_next5.style.left = 362.5+"px";
                                 document.getElementById("divg").append(btn_next5);
                                 btn_next5.onclick = function () {
                                     divg.innerHTML = "哦，原来是昨天（划掉";
@@ -219,7 +218,7 @@
                                         btn_next7.className = "btn_next";
                                         btn_next7.style.position = "relative";
                                         btn_next7.style.top = 200+"px";
-                                        btn_next7.style.left = 138+"px";
+                                        btn_next7.style.left = 138.5+"px";
                                         document.getElementById("divg").append(btn_next7);
                                         btn_next7.onclick = function () {
                                             divg.innerHTML = "先去哪里看看呢？";
@@ -248,7 +247,7 @@
                                                 btn_door.className = "btn_door";
                                                 btn_door.style.position = "relative";
                                                 btn_door.style.top = 200+"px";
-                                                btn_door.style.left = -150+"px";
+                                                btn_door.style.left = -148+"px";
                                                 document.getElementById("divg").append(btn_door);
 
                                                 btn_door.onclick = function () {
@@ -258,18 +257,18 @@
                                                     btn_balcony.className = "btn_balcony";
                                                     btn_balcony.style.position = "relative";
                                                     btn_balcony.style.top = 200+"px";
-                                                    btn_balcony.style.left = -400+"px";
+                                                    btn_balcony.style.left = -399+"px";
                                                     document.getElementById("divg").append(btn_balcony);
 
                                                     btn_balcony.onclick = function () {
-                                                        divg.innerHTML = "武汉的天气真tm要命，还开着窗，这里也没什么好看的，快溜吧..."
+                                                        divg.innerHTML = "这里也没什么好看的，快溜吧...";
                                                         console.log("Real button balcony created!");
                                                         var btn_wc = document.createElement("button");
                                                         btn_wc.innerHTML = "撤硕";
                                                         btn_wc.className = "btn_wc";
                                                         btn_wc.style.position = "relative";
-                                                        btn_wc.style.top = 150+"px";
-                                                        btn_wc.style.left = 0+"px";
+                                                        btn_wc.style.top = 200+"px";
+                                                        btn_wc.style.left = -191+"px";
                                                         document.getElementById("divg").append(btn_wc);
                                                         btn_wc.onclick = function () {
                                                             var btn_next8 = document.createElement("button");
@@ -279,7 +278,7 @@
                                                             btn_next8.className = "btn_next";
                                                             btn_next8.style.position = "relative";
                                                             btn_next8.style.top = 200+"px";
-                                                            btn_next8.style.left = -450+"px";
+                                                            btn_next8.style.left = -415+"px";
                                                             document.getElementById("divg").append(btn_next8);
                                                             btn_next8.onclick = function () {
                                                                 var btn_next9 = document.createElement("button");
@@ -289,19 +288,30 @@
                                                                 btn_next9.className = "btn_next";
                                                                 btn_next9.style.position = "relative";
                                                                 btn_next9.style.top = 200+"px";
-                                                                btn_next9.style.left = -250+"px";
+                                                                btn_next9.style.left = -207+"px";
                                                                 document.getElementById("divg").append(btn_next9);
                                                                 btn_next9.onclick = function () {
                                                                     var btn_next10 = document.createElement("button");
-                                                                        divg.innerHTML = "门开了！爷可以出去了！";
-                                                                        console.log("Button10 created!");
-                                                                        btn_next10.innerHTML = "结束游戏";
-                                                                        btn_next10.className = "btn_next";
-                                                                        btn_next10.style.position = "relative";
-                                                                        btn_next10.style.top = 200+"px";
-                                                                        btn_next10.style.left = -150+"px";
-                                                                        document.getElementById("divg").append(btn_next10);
-                                                                    
+                                                                    divg.innerHTML = "门开了！爷可以出去了！";
+                                                                    console.log("Button10 created!");
+                                                                    btn_next10.innerHTML = "结束游戏";
+                                                                    btn_next10.className = "btn_next";
+                                                                    btn_next10.style.position = "relative";
+                                                                    btn_next10.style.top = 200+"px";
+                                                                    btn_next10.style.left = -148+"px";
+                                                                    document.getElementById("divg").append(btn_next10);
+                                                                    btn_next10.onclick = function () {
+                                                                        var btn_next11 = document.createElement("button");
+                                                                        divg.innerHTML = "游戏结束";
+                                                                        console.log("Button11 created!");
+                                                                        btn_next11.innerHTML = "再来一次";
+                                                                        btn_next11.className = "btn_next";
+                                                                        btn_next11.style.position = "relative";
+                                                                        btn_next11.style.top = 200+"px";
+                                                                        btn_next11.style.left = -36+"px";
+                                                                        document.getElementById("divg").append(btn_next11);
+                                                                        btn_next11.onclick = start;
+                                                                    }
                                                                 }
                                                             }
                                                         }
@@ -323,7 +333,7 @@
                     }
                 }
                 
-            }
+            
                 
             //var btn_next = document.createElement("button");
         }

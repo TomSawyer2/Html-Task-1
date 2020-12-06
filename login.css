@@ -1,0 +1,73 @@
+body {
+    background-image: url("background.jfif");;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+ 
+#login_frame {
+    width: 400px;
+    height: 240px;
+    padding: 13px;
+ 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+ 
+    background-color: rgba(240, 255, 255, 0.5);
+ 
+    border-radius: 10px;
+    text-align: center;
+}
+ 
+form p > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+.label_input {
+    font-size: 18px;
+    font-family: 宋体;
+
+    width: 65px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+ 
+    color: white;
+    background-color: #3CD8FF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+ 
+.text_field {
+    width: 278px;
+    height:50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+ 
+#btn_login {
+    font-size: 25px;
+    font-family: 宋体;
+ 
+    width: 250px;
+    height: 50px;
+    line-height: 28px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    
+    color: white;
+    background-color: #3BD9FF;
+    border-radius: 6px;
+    border: 0;
+ 
+    float: left;
+}
+ 
+#login_control {
+    padding: 0 28px;
+}
