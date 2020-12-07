@@ -1,0 +1,127 @@
+
+        body{
+            text-align: center;
+        }
+        .center{
+            text-align: center;
+        }
+        .text{
+            text-align:center;
+            font-size: xx-large;
+        }
+        .zone {
+            text-align: center;
+            font-size:xx-large;
+            min-height: 100px;
+            height: 450px;
+            width: 1000px;
+            margin-left: 250px;
+            border-radius: 10px 10px 10px 10px;
+            border: 2px solid rgb(67, 215, 181);
+        }
+
+        .btn_start{
+            text-align:center;
+            cursor: pointer;
+            width: 108px;
+            height: 44px;
+            line-height: 45px;
+            line-height: 44px\9;
+            margin-top: 200px;
+            padding: 0;
+            background: 0 0;
+            background-color: #4e6ef2;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 17px;
+            color: #fff;
+            box-shadow: none;
+            font-weight: 400;
+            border: none;
+            outline: 0;
+            position: relative;
+            visibility: visible;
+        }
+
+        .btn_next{
+            text-align:center;
+            cursor: pointer;
+            width: 108px;
+            height: 44px;
+            line-height: 45px;
+            line-height: 44px\9;
+            margin-top: 200px;
+            padding: 0;
+            background: 0 0;
+            background-color: #4e6ef2;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 17px;
+            color: #fff;
+            box-shadow: none;
+            font-weight: 400;
+            border: none;
+            outline: 0;
+            position: relative;
+        }
+
+        .btn_balcony{
+            text-align:center;
+            cursor: pointer;
+            width: 108px;
+            height: 44px;
+            line-height: 45px;
+            line-height: 44px\9;
+            margin-top: 200px;
+            padding: 0;
+            background: 0 0;
+            background-color: #4e6ef2;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 17px;
+            color: #fff;
+            box-shadow: none;
+            font-weight: 400;
+            border: none;
+            outline: 0;
+            position: relative;
+        }
+
+        .btn_wc{
+            text-align:center;
+            cursor: pointer;
+            width: 108px;
+            height: 44px;
+            line-height: 45px;
+            line-height: 44px\9;
+            margin-top: 200px;
+            padding: 0;
+            background: 0 0;
+            background-color: #4e6ef2;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 17px;
+            color: #fff;
+            box-shadow: none;
+            font-weight: 400;
+            border: none;
+            outline: 0;
+            position: relative;
+        }
+
+        .btn_door{
+            text-align:center;
+            cursor: pointer;
+            width: 108px;
+            height: 44px;
+            line-height: 45px;
+            line-height: 44px\9;
+            margin-top: 200px;
+            padding: 0;
+            background: 0 0;
+            background-color: #4e6ef2;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 17px;
+            color: #fff;
+            box-shadow: none;
+            font-weight: 400;
+            border: none;
+            outline: 0;
+            position: relative;
+        }
