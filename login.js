@@ -11,7 +11,7 @@ function login() {
  
         alert("请输入密码");
  
-    } else if((username.value == "admin" && pass.value == "123456")||(username.value == "xxwlsp" && pass.value == "123456")){
+    } else if(username.value == "admin" && pass.value == "123456"){
         
         window.location.href="task.html";
  
